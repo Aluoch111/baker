@@ -5,7 +5,7 @@ function NewRecipe () {
   const [name, setName] = useState('');
   const [directions, setDirections] = useState('');
   const [cooktime, setCooktime] = useState('');
-  const history = useHistory();
+  // const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,12 +16,12 @@ function NewRecipe () {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(recipe)
     }).then(() => {
-      history.push('/');
+      // history.push('/');
     })
   }
 
   return (
-    <div className="create">
+    <div className="recipe">
       <h2>Add a New Recipe</h2>
       <form onSubmit={handleSubmit}>
         <label>Dessert name:</label>

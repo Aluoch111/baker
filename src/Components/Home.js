@@ -1,5 +1,4 @@
 import RecipeList from "./RecipeList";
-import NavBar from "./NavBar";
 import useFetch from "./Fetch";
 
 function Home(){ 
