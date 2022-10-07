@@ -6,8 +6,11 @@ function RecipesList ({ recipes }){
       {recipes.map(recipe => (
         <div className="recipes" key={recipe.id} >
           <Link to={`/recipes/${recipe.id}`}>
+
             <h2>{ recipe.name }</h2>
-            <p>Method { recipe.directions }</p>
+            <br/>
+            <p> <h3>Method</h3> { recipe.directions }</p>
+            <br/>
           </Link>
         </div>
       ))}

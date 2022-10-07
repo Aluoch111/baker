@@ -100,3 +100,16 @@
   border-radius: 8px;
   cursor: pointer;
 }
+/* Page not found */
+.not-found h2{
+  text-align: center;
+}
+.not-found h1{
+  text-align: center;
+}
+.not-found p{
+  text-align: center;
+}
+.not-found h4{
+  text-align: center;
+}
