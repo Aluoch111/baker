@@ -15,6 +15,8 @@
            backgroundColor: '#f1356d',
            borderRadius: '8px' 
          }}>New Recipe</Link>
+         <Link to="/recipes/:id">Recipe</Link>
+        
        </div>
      </nav>
    );

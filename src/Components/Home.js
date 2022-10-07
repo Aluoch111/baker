@@ -1,12 +1,13 @@
 import RecipeList from "./RecipeList";
-import { useFetch } from  "react";
-// import Fetch from "./Fetch";
+import NavBar from "./NavBar";
+import useFetch from "./Fetch";
 
 function Home(){ 
     const { error, isPending, data: recipes } = useFetch('https://bakers-delight.herokuapp.com/recipes ');
 
   return (
     <div className="home">
+      <NavBar/>
       { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
       { recipes && <RecipeList recipes={recipes} /> }

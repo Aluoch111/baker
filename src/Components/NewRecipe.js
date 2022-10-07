@@ -1,4 +1,4 @@
-import { useState , useHistory,  } from "react";
+import React, { useState , useHistory } from "react";
  
 
 const NewRecipe = () => {
@@ -10,7 +10,7 @@ const NewRecipe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const recipe = { name, directions, cooktime };
-
+   console.log("hello")
     fetch('https://bakers-delight.herokuapp.com/recipes', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
@@ -47,6 +47,7 @@ const NewRecipe = () => {
         </select>
         <button>Add Recipe</button>
       </form>
+      
     </div>
   );
 }
