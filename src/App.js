@@ -12,11 +12,11 @@ export default function App() {
   return (
 
     <Routes>
-        <Route path= "/home" element = {<Home/>}/>
-        <Route path="/navBar" element = {<NavBar/>}/>
-        <Route path= "/newRecipe" element = { <NewRecipe/>}/>
+        <Route path= "/" element = {<Home/>}/>
+        <Route path="/navbar" element = {<NavBar/>}/>
+        <Route path= "/newrecipe" element = { <NewRecipe/>}/>
         <Route path ="/recipes/:id" element ={ <RecipeDetails/>}/>
-        <Route path ="/pageNotFound" element ={ <PageNotFound/>}/>
+        <Route path ="/pagenotfound" element ={ <PageNotFound/>}/>
     </Routes>
 
   );

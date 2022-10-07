@@ -1,5 +1,6 @@
-import RecipesList from "RecipesList";
+import RecipeList from "./RecipeList";
 import { useFetch } from  "react";
+// import Fetch from "./Fetch";
 
 function Home(){ 
     const { error, isPending, data: recipes } = useFetch('https://bakers-delight.herokuapp.com/recipes ');
@@ -8,7 +9,7 @@ function Home(){
     <div className="home">
       { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
-      { recipes && <RecipesList recipes={recipes} /> }
+      { recipes && <RecipeList recipes={recipes} /> }
     </div>
   );
 };
