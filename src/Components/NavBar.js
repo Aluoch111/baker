@@ -3,13 +3,6 @@
 
  function NavBar () {
 
-    useEffect(() => {
-        fetch("https://bakers-delight.herokuapp.com/recipes")
-      
-        .then((res) => res.json())
-        .then( data => console.log(data));
-       } ,[] )
-
    return (
 
      <nav className="navbar">
