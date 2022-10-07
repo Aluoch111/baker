@@ -10,15 +10,15 @@ import {  Route, Routes } from 'react-router-dom';
 export default function App() {
 
   return (
-
-    <Routes>
-        <Route path= "/" element = {<Home/>}/>
-        <Route path="/navbar" element = {<NavBar/>}/>
-        <Route path= "/newrecipe" element = { <NewRecipe/>}/>
-        <Route path ="/recipes/:id" element ={ <RecipeDetails/>}/>
-        <Route path ="/pagenotfound" element ={ <PageNotFound/>}/>
-    </Routes>
-
+    <div className="app">
+        <NavBar/>
+        <Routes>
+            <Route path= "/" element = {<Home/>}/>
+            <Route path= "/newrecipe" element = { <NewRecipe/>}/>
+            <Route path ="/recipes/:id" element ={ <RecipeDetails/>}/>
+            <Route path ="/pagenotfound" element ={ <PageNotFound/>}/>
+        </Routes>
+    </div>
   );
 };
 

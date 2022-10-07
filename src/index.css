@@ -5,6 +5,7 @@
   font-family: "Quicksand";
   color: #333;
 }
+/* Navigation bar */
 .navbar {
   padding: 20px;
   display: flex;
@@ -14,7 +15,7 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #e60f0f;
 }
 .navbar .links {
   margin-left: auto;
@@ -25,7 +26,7 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #e60f0f;
 }
 .content {
   max-width: 600px;
@@ -34,7 +35,7 @@
 }
 
 /* blog previews / list */
-.blog-preview {
+/* .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
@@ -49,10 +50,10 @@
 }
 .blog-preview a{
   text-decoration: none;
-}
+} */
 
 /* blog details page */
-.recipe-details h2 {
+/* .recipe-details h2 {
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 10px;
@@ -67,7 +68,7 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
-}
+} */
 
 /* create new blog form */
 .create {
@@ -101,15 +102,7 @@
   cursor: pointer;
 }
 /* Page not found */
-.not-found h2{
+.not-found {
   text-align: center;
-}
-.not-found h1{
-  text-align: center;
-}
-.not-found p{
-  text-align: center;
-}
-.not-found h4{
-  text-align: center;
+  font-size: 80px;
 }

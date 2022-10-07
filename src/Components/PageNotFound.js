@@ -6,7 +6,7 @@ export default function PageNotFound (){
       <h2>Error</h2>
       <h1 >404</h1>
       <p>Page not Found</p>
-      <h4> <Link to="/">Back to the homepage...</Link> </h4>
+      <h4><Link to="/">Back to the homepage...</Link></h4>
     </div>
   );
 };
