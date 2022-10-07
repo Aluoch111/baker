@@ -1,23 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Recipes from "./Components/Recipes";
+import useFetch from "./useFetch";
 
-export default function Home () {
+Function Home (){
 
-return (
-    <div>
-    <h1>Hello</h1>
-        <nav className="navbar">
-        <h1>Baker's Delight</h1>
-        <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/newRecipe" style={{ 
-            color: 'white', 
-            backgroundColor: '#f1356d',
-            borderRadius: '8px' 
-        }}>New Recipe</Link>
-        </div>
-    </nav>
+  const { error, isPending, data: blogs } = useFetch('https://bakers-delight.herokuapp.com/recipes ')
+
+  return (
+    <div className="home">
+      { error && <div>{ error }</div> }
+      { isPending && <div>Loading...</div> }
+      { blogs && <Recipes recipes={recipes} /> }
     </div>
-  
-)
+  );
 }
+ 
+export default Home;
