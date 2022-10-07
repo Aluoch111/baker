@@ -1,14 +1,22 @@
-// import logo from './logo.svg';
-// import './App.css';
 import NavBar from "./Components/NavBar";
 import NewRecipe from "./Components/NewRecipe";
-
+import { BrowserRouter , Route, Routes } from 'react-router-dom';
+import Home from "./Components/Home";
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <NewRecipe/>
-    </div>
+    <Routes>
+      <Route path ="/" element = { <Home/>}/>
+      <Route path= "/navbar" element = {<NavBar/>}/>
+      <Route path= "/newRecipe" element = { <NewRecipe/>}/>
+      {/* <Route/>
+      <Route/>
+      <Route/>
+      <Route/> */}
+    </Routes>
+    // <div className="App">
+    //   
+    //  
+    // </div>
   );
 }
 
