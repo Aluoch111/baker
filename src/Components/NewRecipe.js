@@ -1,11 +1,11 @@
-import React, { useState , useHistory } from "react";
+import React, { useState } from "react";
  
 
 function NewRecipe () {
   const [name, setName] = useState('');
   const [directions, setDirections] = useState('');
   const [cooktime, setCooktime] = useState('');
-  // const history = useHistory();
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ function NewRecipe () {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(recipe)
     }).then(() => {
-      // history.push('/');
+     
     })
   }
 
@@ -42,10 +42,13 @@ function NewRecipe () {
           value={cooktime}
           onChange={(e) => setCooktime(e.target.value)}
         >
-          <option value="">under 40  mins</option>
-          <option value="">over 50 mins</option>
+          <option value="">40  mins</option>
+          <option value="">50 mins</option>
+          <option value="">30 mins</option>
+          <option value="">20 mins</option>
+          
         </select>
-        <button>Add Recipe</button>
+        <button onClick={handleSubmit} >Add Recipe</button>
       </form>
       
     </div>

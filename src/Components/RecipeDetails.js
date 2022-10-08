@@ -4,13 +4,13 @@ import React ,{ useHistory , useParams , useFetch } from "react";
 function RecipeDetails (){
   const { id } = useParams();
   const { data: recipe, error, isPending } = useFetch('https://bakers-delight.herokuapp.com/recipes/' + id);
-  // const history = useHistory();
+ 
 
   const handleClick = () => {
     fetch('https://bakers-delight.herokuapp.com/recipes/' + recipe.id, {
       method: 'DELETE'
     }).then(() => {
-      // history.push('/');
+     
     }) 
   }
 
