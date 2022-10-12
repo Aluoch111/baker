@@ -47,7 +47,7 @@
 }
 .recipe h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #e60f0f;
   margin-bottom: 30px;
 }
 .recipe input, .recipe textarea, .recipe select {
@@ -58,8 +58,11 @@
   box-sizing: border-box;
   display: block;
 }
+.recipe-list{
+  text-decoration: none;
+}
 .recipe button {
-  background: #f1356d;
+  background: #e60f0f;
   color: #fff;
   border: 0;
   padding: 8px;

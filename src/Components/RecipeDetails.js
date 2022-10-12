@@ -1,8 +1,8 @@
-import React ,{ useState , useFetch } from "react";
+import React ,{ useParams , useFetch } from "react";
 
 
 function RecipeDetails (){
-  const { id } = useState();
+  const { id } = useParams();
   const { data: recipe, error, isPending } = useFetch('https://bakers-delight.herokuapp.com/recipes/' + id);
  
 
