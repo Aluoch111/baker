@@ -1,6 +1,0 @@
-name : Github Pages Deploy
-
-on:
-push:
-branches:
--"master"
