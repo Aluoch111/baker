@@ -16,7 +16,7 @@ function NewRecipe () {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(recipe)
     }).then(() => {
-     
+     console.log(recipe)
     })
   }
 
@@ -42,7 +42,7 @@ function NewRecipe () {
           value={cooktime}
           onChange={(e) => setCooktime(e.target.value)}
         >
-          <option value="">40  mins</option>
+          <option value="">40 mins</option>
           <option value="">50 mins</option>
           <option value="">30 mins</option>
           <option value="">20 mins</option>

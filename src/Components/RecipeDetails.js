@@ -1,8 +1,8 @@
-import React ,{ useHistory , useParams , useFetch } from "react";
+import React ,{ useState , useFetch } from "react";
 
 
 function RecipeDetails (){
-  const { id } = useParams();
+  const { id } = useState();
   const { data: recipe, error, isPending } = useFetch('https://bakers-delight.herokuapp.com/recipes/' + id);
  
 
@@ -10,7 +10,7 @@ function RecipeDetails (){
     fetch('https://bakers-delight.herokuapp.com/recipes/' + recipe.id, {
       method: 'DELETE'
     }).then(() => {
-     
+     console.log(recipe)
     }) 
   }
 
