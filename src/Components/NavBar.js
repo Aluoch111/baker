@@ -1,5 +1,4 @@
  import { Link } from "react-router-dom";
-// import RecipeDe from "./NewRecipe";
  import React  from  "react";
  
  function NavBar () {
@@ -15,7 +14,6 @@
            backgroundColor: '#f1356d',
            borderRadius: '8px' 
          }}>New Recipe</Link>
-        <Link to="/">Recipe Details</Link>
         
        </div>
      </nav>
